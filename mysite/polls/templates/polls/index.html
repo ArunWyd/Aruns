@@ -1,0 +1,32 @@
+<!-- {% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %} -->
+    {% if open %}
+    <p>We are currently open!</p>
+    {% else %}
+    <p>We are currently closed! Feel free to contact us!</p>
+    {% endif %}
+
+<!-- {% endif %} -->
+
+<!-- <html>
+<head>
+</head>
+<body>
+    <ul>HOME
+        <li>
+            Home
+        </li>
+        <li>
+            <a href="about_us.html">About</a>
+        </li>
+        <li>
+            Contact
+        </li>
+    </ul>
+</body>
+</html> -->
